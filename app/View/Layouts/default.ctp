@@ -14,31 +14,78 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
-$cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
+$siteDescription = __d('bloodforu_dev', 'BloodForU: A timely blood donation can save many lifes');
+
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php echo $cakeDescription ?>:
-		<?php echo $this->fetch('title'); ?>
+		<?php echo $siteDescription; ?>
+		<?php 
+		// echo $this->fetch('title');
+		 ?>
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
+		
+		echo $this->Html->script('jquery');
+		echo $this->Html->script('bootstrap.min');
+		echo $this->Html->script('drawer.min');
 
-		echo $this->Html->css('cake.generic');
+		echo $this->Html->css('bootstrap');
+		echo $this->Html->css('bootstrap-drawer.min');
+		echo $this->Html->css('custom');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
 </head>
-<body>
+<body class="has-canvas">
 	<div id="container">
 		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
+			
+
+
+
+
+
+<div id="drawerExample" class="drawer dw-xs-10 dw-sm-6 dw-md-4 fold" aria-labelledby="drawerExample">
+        <div class="drawer-controls">
+            <a href="#drawerExample" data-toggle="drawer" href="#drawerExample" aria-foldedopen="false" aria-controls="drawerExample" class="btn btn-primary btn-sm">Menu</a>
+        </div>
+        <div class="drawer-contents">
+            <div class="drawer-heading">
+                <h2 class="drawer-title">Menu</h2>
+            </div>
+            <div class="drawer-body">
+                <p>
+                    Aaaah.. I am gonna sleep... now
+                </p>
+                <a href="#">A Regular Link</a>
+            </div>
+            <ul class="drawer-nav">
+                <li role="presentation" class="active"><a href="#">Home</a></li>
+                <li role="presentation"><a href="#">Profile</a></li>
+                <li role="presentation"><a href="#">Requests</a></li>
+            </ul>
+            <div class="drawer-footer">
+                <small>&copy; Blood For U</small>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+  
+</div>
+
+
+
+
+
+
 		</div>
 		<div id="content">
 
@@ -46,17 +93,15 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 			<?php echo $this->fetch('content'); ?>
 		</div>
-		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false, 'id' => 'cake-powered')
-				);
-			?>
-			<p>
-				<?php echo $cakeVersion; ?>
-			</p>
-		</div>
+
+
+        <footer class="footer">
+
+<h1>THIS IS FOOTER</h1>
+        
+        </footer>
+
+
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
 </body>
