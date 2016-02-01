@@ -112,7 +112,7 @@ cursor: pointer;
 
 .wrapper {
 	max-width: 400px;
-	margin: 50px auto;
+	margin: 30px auto;
 	padding-left: 1em;
 	padding-right: 1em;
 }
@@ -333,15 +333,144 @@ position: absolute;
 top: 61%;
 width: 9999px;
 height: 1px;
-background: #2f1c1c;
+/*background: #2f1c1c;*/
+/*border-top: 1px dashed #8c8b8b;
+	border-bottom: 1px dashed #fff;*/
+/*	background-color: #fff;
+*/	border-top: 2px dashed #8c8b8b;
+z-index: -1;
     }
 
     .strike > span:before {
         right: 100%;
         margin-right: 15px;
+        width: 75%;
     }
 
     .strike > span:after {
         left: 100%;
         margin-left: 15px;
+		width: 75%;
+
     }
+
+    .switch-light span span.active{
+    	color: #ffffff;
+    }
+
+
+/*Join band*/
+    .join {
+    margin: 3px 0 0 0;
+    padding: 2px 0;
+    background: #781f1f;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.join h3 {
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #fff;
+}
+.join p {
+    line-height: 1.8em;
+    font-weight: 400;
+    color: #fff;
+    font-size: 0.85em;
+    display: inline-block;
+}
+.join a {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #781f1f;
+    padding: 0.5em 1.8em;
+    background: #fff;
+    border-radius: 15px;
+    border: 2px solid #fff;
+    display: inline-block;
+    text-decoration: none;
+}
+.join a:hover {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #fb0d0d;
+    padding: 0.5em 1.8em;
+    background: #fff;
+    border-radius: 15px;
+    border: 2px solid #fff;
+    display: inline-block;
+    text-decoration: none;
+}
+.join-link{
+	padding-top: 2%;
+}
+
+
+
+/*requests table*/
+
+
+.requests-table {
+  display: block;
+  width: 90%;
+  background: #fff;
+  margin: 0 auto;
+  padding: 10px 17px;
+  -webkit-box-shadow: 2px 2px 3px -1px rgba(0,0,0,0.35);
+}
+
+.donate-req-h2{
+	font-size: 34px;
+color: #5D5151;
+}
+
+
+
+
+#blood_reqs {
+  margin: 0 auto;
+  /*font-size: 1.2em;*/
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+
+#blood_reqs thead {
+  cursor: pointer;
+  background: #c9dff0;
+}
+#blood_reqs thead tr th { 
+  font-weight: bold;
+  padding: 12px 30px;
+  padding-left: 42px;
+  text-align: center;
+
+}
+#blood_reqs thead tr th span { 
+  padding-right: 20px;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+#blood_reqs thead tr th.headerSortUp, #blood_reqs thead tr th.headerSortDown {
+  background: #acc8dd;
+}
+
+#blood_reqs thead tr th.headerSortUp span {
+  background-image: url('http://i.imgur.com/SP99ZPJ.png');
+}
+#blood_reqs thead tr th.headerSortDown span {
+  background-image: url('http://i.imgur.com/RkA9MBo.png');
+}
+
+
+#blood_reqs tbody tr { 
+  color: #555;
+}
+#blood_reqs tbody tr td {
+  text-align: center;
+  padding: 15px 10px;
+}
+#blood_reqs tbody tr td.lalign {
+  text-align: left;
+}
