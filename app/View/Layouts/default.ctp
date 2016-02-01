@@ -68,6 +68,7 @@ $siteDescription = __d('bloodforu_dev', 'BloodForU: A timely blood donation can 
             <li><a href="#">Request</a></li>
             <li><a href="#">Donate</a></li>
             <li><a href="#">Login</a></li>
+            <li><a href="#">Join Us</a></li>
              <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="margin-right:21px;">More <b class="caret"></b></a>
               <ul class="dropdown-menu" style="margin-right:9px;">

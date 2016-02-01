@@ -75,12 +75,12 @@ echo $this->fetch('script');
 
 <div class="req_form">
             <div class="form-group">
-              <input class="form-control login-field" value="" placeholder="Enter your email" id="req_email" type="text">
+              <input class="form-control login-field" value="" placeholder="Email" id="req_email" type="text">
               <label class="login-field-icon fui-user" for="req_email"></label>
             </div>
  
             <div class="form-group">
-              <input class="form-control login-field" value="" placeholder="Enter your city" id="req_city" type="text">
+              <input class="form-control login-field" value="" placeholder="City" id="req_city" type="text">
               <label class="login-field-icon fui-location" for="req_city"></label>
 
             </div>
@@ -89,11 +89,17 @@ echo $this->fetch('script');
             <div class="form-group btn-group">
             <button data-toggle="dropdown" class="btn btn-primary dropdown-toggle" type="button">Blood Type <span class="caret"></span></button>
             <ul role="menu" class="dropdown-menu">
-              <li><a class="active" href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a class="active" href="#">O +</a></li>
+              <li><a href="#">O -</a></li>
+              <li><a href="#">A +</a></li>
+              <li><a href="#">A -</a></li>
+              <li><a href="#">B +</a></li>
+              <li><a href="#">B -</a></li>
+              <li><a href="#">AB +</a></li>
+              <li><a href="#">AB -</a></li>
+
               <li class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">Others</a></li>
             </ul>
           </div>
 
@@ -105,12 +111,12 @@ echo $this->fetch('script');
 <div class="donate_form">
 
  <div class="form-group">
-              <input class="form-control login-field" value="" placeholder="Enter your name" id="donor_email" type="text">
+              <input class="form-control login-field" value="" placeholder="Email" id="donor_email" type="text">
               <label class="login-field-icon fui-user" for="donor_email"></label>
             </div>
  
             <div class="form-group">
-              <input class="form-control login-field" value="" placeholder="Enter your city" id="donor_city" type="text">
+              <input class="form-control login-field" value="" placeholder="City" id="donor_city" type="text">
               <label class="login-field-icon fui-location" for="donor_city"></label>
 
             </div>
@@ -129,7 +135,151 @@ echo $this->fetch('script');
 
 
 
-<h1>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br>sdf sdf <br></h1>
+
+
+<div class="what-we-do">
+  <div class="what-we-do-header">
+
+
+
+
+<div class="strike">
+    <span>  
+    <h2 class='what-we-do-h2' align="center">
+ What We Do 
+  </h2>
+  </span>
+</div>
+    
+  </div>
+  <div class='what-we-do-body row col-md-offset-2'>
+    
+<!-- http://codepen.io/mithicher/pen/azQKNN/ -->
+    <div class="wrapper col-md-4">
+        
+        <div class="card radius shadowDepth1">
+          <div class="card__image border-tlr-radius">
+
+            <?php
+               echo $this->Html->image('http://lorempixel.com/400/200/sports/',array('alt'=>'','class'=>'border-tlr-radius'));
+            ?>
+                </div>
+
+          <div class="card__content card__padding">
+                    <div class="card__share">
+                        <div class="card__social">  
+                            <a class="share-icon facebook" href="#"><span class="fa fa-facebook"></span></a>
+                            <a class="share-icon twitter" href="#"><span class="fa fa-twitter"></span></a>
+                            <a class="share-icon googleplus" href="#"><span class="fa fa-google-plus"></span></a>
+                        </div>
+
+                        <a id="share" class="share-toggle share-icon" href="#"></a>
+                    </div>
+
+
+            <article class="card__article">
+              <h2><a href="#">Material Design Card - For Blog Post Article</a></h2>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus harum...</p>
+            </article>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+          <div class="wrapper col-md-4">
+        
+        <div class="card radius shadowDepth1">
+          <div class="card__image border-tlr-radius">
+            <?php
+               echo $this->Html->image('http://lorempixel.com/400/200/sports/',array('alt'=>'','class'=>'border-tlr-radius'));
+            ?>
+                </div>
+
+          <div class="card__content card__padding">
+                    <div class="card__share">
+                        <div class="card__social">  
+                            <a class="share-icon facebook" href="#"><span class="fa fa-facebook"></span></a>
+                            <a class="share-icon twitter" href="#"><span class="fa fa-twitter"></span></a>
+                            <a class="share-icon googleplus" href="#"><span class="fa fa-google-plus"></span></a>
+                        </div>
+
+                        <a id="share" class="share-toggle share-icon" href="#"></a>
+                    </div>
+
+
+            <article class="card__article">
+              <h2><a href="#">Material Design Card - For Blog Post Article</a></h2>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus harum...</p>
+            </article>
+          </div>
+
+
+        </div>
+        
+
+      </div>
+
+          <div class="wrapper col-md-4">
+        
+        <div class="card radius shadowDepth1">
+          <div class="card__image border-tlr-radius">
+            <?php
+               echo $this->Html->image('http://lorempixel.com/400/200/sports/',array('alt'=>'','class'=>'border-tlr-radius'));
+            ?>
+                </div>
+
+          <div class="card__content card__padding">
+                    <div class="card__share">
+                        <div class="card__social">  
+                            <a class="share-icon facebook" href="#"><span class="fa fa-facebook"></span></a>
+                            <a class="share-icon twitter" href="#"><span class="fa fa-twitter"></span></a>
+                            <a class="share-icon googleplus" href="#"><span class="fa fa-google-plus"></span></a>
+                        </div>
+
+                        <a id="share" class="share-toggle share-icon" href="#"></a>
+                    </div>
+
+
+            <article class="card__article">
+              <h2><a href="#">Material Design Card - For Blog Post Article</a></h2>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus harum...</p>
+            </article>
+          </div>
+
+
+        </div>
+        
+
+      </div>
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <script type="text/javascript">
 
 
@@ -139,7 +289,7 @@ $('.donate_form').hide();
 
     $("#home-slider").owlCarousel({
 
-          navigation : false, // Show next and prev buttons
+          navigation : true, // Show next and prev buttons
           slideSpeed : 1000,
           paginationSpeed : 1000,
           singleItem:true,
@@ -186,6 +336,16 @@ $('.donate_form').hide();
 
     });
 
+
+
+      $('.card__share > a').on('click', function(e){ 
+    e.preventDefault() // prevent default action - hash doesn't appear in url
+    //   $(this).parent().find( 'div' ).toggleClass( 'card__social--active' );
+    // $(this).toggleClass('share-expanded');
+    });
+
+
+
   });
 
 
@@ -208,5 +368,7 @@ $('.donate_form').hide();
   /*-moz-animation-iteration-count: infinite;  */
 }
 
-
+.owl-prev{
+  left: 0px;
+}
 </style>
