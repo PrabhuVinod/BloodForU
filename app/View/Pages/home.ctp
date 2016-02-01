@@ -1,6 +1,8 @@
 <?php
 
 echo $this->Html->script('owl.carousel');
+echo $this->Html->script('tablesorter.min');
+
 
 echo $this->Html->css('owl.carousel');
 echo $this->Html->css('owl.theme');
@@ -12,6 +14,8 @@ echo $this->Html->css('toggle-switch');
 echo $this->fetch('css');
 echo $this->fetch('script');
 ?>
+
+
 <div class="form-slide-container">
 <div id="home-slider" class="owl-carousel owl-theme">
 
@@ -152,7 +156,7 @@ echo $this->fetch('script');
 </div>
     
   </div>
-  <div class='what-we-do-body row col-md-offset-2'>
+  <div class='what-we-do-body row col-md-offset-2' style="margin-right: 0px;">
     
 <!-- http://codepen.io/mithicher/pen/azQKNN/ -->
     <div class="wrapper col-md-4">
@@ -266,10 +270,42 @@ echo $this->fetch('script');
 
 
 
+<!-- Join Band -->
 
 
 
+<div class="join">
+       <div class="container">
+         <div class="col-md-9 join-info">
+         <h3>Join us. Become a Volunteer.</h3>
+         <p>Come. Let us make India a better place to live.</p>
+         </div>
+         <div class="col-md-3 join-link">
+         <a href="#">Join Us</a>
+         </div>
+         <div class="clearfix"></div>
+       </div>
+     </div>
 
+
+<div class="home-requests">
+  
+  <div class="home-requests-head">
+
+<div class="strike">
+    <span>  
+    <h2 class='donate-req-h2' align="center">
+ Recent Emergency Requests
+  </h2>
+  </span>
+</div>
+    
+  </div>
+
+<?php
+echo $this->element('requeststable');
+?>
+</div>
 
 
 
