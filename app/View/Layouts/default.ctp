@@ -32,6 +32,7 @@ $siteDescription = __d('bloodforu_dev', 'BloodForU: A timely blood donation can 
 		
 		echo $this->Html->script('jquery');
 		echo $this->Html->script('bootstrap.min');
+		echo $this->Html->script('masonry.pkgd.min');
 
 
 		
@@ -139,17 +140,17 @@ $siteDescription = __d('bloodforu_dev', 'BloodForU: A timely blood donation can 
 
 				<div>
 					<i class="fa fa-map-marker"></i>
-					<p><span>21 Revolution Street</span> Paris, France</p>
+					<p><span>Hyderabad</span> India</p>
 				</div>
 
 				<div>
 					<i class="fa fa-phone"></i>
-					<p>+1 555 123456</p>
+					<p>+91 8121 66 8944</p>
 				</div>
 
 				<div>
 					<i class="fa fa-envelope"></i>
-					<p><a href="mailto:support@company.com">support@company.com</a></p>
+					<p><a href="mailto:support@bloodforu.com">support@bloodforu.com</a></p>
 				</div>
 
 			</div>

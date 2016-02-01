@@ -3,6 +3,9 @@
 echo $this->Html->script('owl.carousel');
 echo $this->Html->script('tablesorter.min');
 
+echo $this->Html->script('Moment');
+echo $this->Html->script('Chart');
+
 
 echo $this->Html->css('owl.carousel');
 echo $this->Html->css('owl.theme');
@@ -309,6 +312,269 @@ echo $this->element('requeststable');
 
 
 
+<div class="testimonial-block">
+  <div class="testimonials-head">
+    
+<div class="strike">
+    <span>  
+    <h2 class='testimonial-req-h2' align="center">
+ What people say about Us
+  </h2>
+  </span>
+</div>
+
+  </div>
+  <div class="testimonials">
+    
+    
+    <div id="testimonials-slider" class="owl-carousel owl-theme">
+
+  <div class="item">
+
+<div class="cd-testimonials-wrapper cd-container">
+  <div class="cd-testimonials">
+    
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div class="cd-author">
+          <?php
+            echo $this->Html->image('http://lorempixel.com/120/120/',array('alt'=>'Author image'));
+          ?>        <ul class="cd-author-info">
+          <li>MyName</li>
+          <li>CEO, AmberCreative</li>
+        </ul>
+      </div>
+    
+
+
+    
+  </div> <!-- cd-testimonials -->
+
+  <a href="#0" class="cd-see-all">See all</a>
+</div> <!-- cd-testimonials-wrapper -->
+
+
+ </div>
+ <div class="item">
+
+<div class="cd-testimonials-wrapper cd-container">
+  <div class="cd-testimonials">
+    
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div class="cd-author">
+          <?php
+            echo $this->Html->image('http://lorempixel.com/120/120/',array('alt'=>'Author image'));
+          ?>        <ul class="cd-author-info">
+          <li>MyName</li>
+          <li>CEO, AmberCreative</li>
+        </ul>
+      </div>
+    
+
+
+    
+  </div> <!-- cd-testimonials -->
+
+  <a href="#0" class="cd-see-all">See all</a>
+</div> <!-- cd-testimonials-wrapper -->
+
+
+</div>
+
+
+  </div>
+
+
+<div class="cd-testimonials-all">
+  <div class="cd-testimonials-all-wrapper">
+    <ul>
+      <li class="cd-testimonials-item">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit totam saepe iste maiores neque animi molestias nihil illum nisi temporibus.</p>
+        
+        <div class="cd-author">
+          <?php
+            echo $this->Html->image('http://lorempixel.com/120/120/',array('alt'=>'Author image'));
+          ?>          <ul class="cd-author-info">
+            <li>MyName</li>
+            <li>CEO, CompanyName</li>
+          </ul>
+        </div> <!-- cd-author -->
+      </li>
+
+      <li class="cd-testimonials-item">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore nostrum nisi, doloremque error hic nam nemo doloribus porro impedit perferendis. Tempora, distinctio hic suscipit. At ullam eaque atque recusandae modi fugiat voluptatem laborum laboriosam rerum, consequatur reprehenderit omnis, enim pariatur nam, quidem, quas vel reiciendis aspernatur consequuntur. Commodi quasi enim, nisi alias fugit architecto, doloremque, eligendi quam autem exercitationem consectetur.</p>
+        
+        <div class="cd-author">
+          <?php
+            echo $this->Html->image('http://lorempixel.com/120/120/',array('alt'=>'Author image'));
+          ?>          <ul class="cd-author-info">
+            <li>MyName</li>
+            <li>CEO, CompanyName</li>
+          </ul>
+        </div> <!-- cd-author -->
+      </li>
+
+      <li class="cd-testimonials-item">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem quibusdam eveniet, molestiae laborum voluptatibus minima hic quasi accusamus ut facere, eius expedita, voluptatem? Repellat incidunt veniam quaerat, qui laboriosam dicta. Quidem ducimus laudantium dolorum enim qui at ipsum, a error.</p>
+        
+        <div class="cd-author">
+          <?php
+            echo $this->Html->image('http://lorempixel.com/120/120/',array('alt'=>'Author image'));
+          ?>          <ul class="cd-author-info">
+            <li>MyName</li>
+            <li>CEO, CompanyName</li>
+          </ul>
+        </div> <!-- cd-author -->
+      </li>
+
+      <li class="cd-testimonials-item">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero voluptates officiis tempore quae officia! Beatae quia deleniti cum corporis eos perferendis libero reiciendis nemo iusto accusamus, debitis tempora voluptas praesentium repudiandae laboriosam excepturi laborum, nisi optio repellat explicabo, incidunt ex numquam. Ullam perferendis officiis harum doloribus quae corrupti minima quia, aliquam nostrum expedita pariatur maxime repellat, voluptas sunt unde, inventore.</p>
+        
+        <div class="cd-author">
+          <?php
+            echo $this->Html->image('http://lorempixel.com/120/120/',array('alt'=>'Author image'));
+          ?>          <ul class="cd-author-info">
+            <li>MyName</li>
+            <li>CEO, CompanyName</li>
+          </ul>
+        </div> <!-- cd-author -->
+      </li>
+
+      <li class="cd-testimonials-item">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit totam saepe iste maiores neque animi molestias nihil illum nisi temporibus.</p>
+        
+        <div class="cd-author">
+          <?php
+            echo $this->Html->image('http://lorempixel.com/120/120/',array('alt'=>'Author image'));
+          ?>          <ul class="cd-author-info">
+            <li>MyName</li>
+            <li>CEO, CompanyName</li>
+          </ul>
+        </div> <!-- cd-author -->
+      </li>
+
+      <li class="cd-testimonials-item">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis quia quas, quis illo adipisci voluptate ex harum iste commodi nulla dolor. Eius ratione quod ab!</p>
+        
+        <div class="cd-author">
+          <?php
+            echo $this->Html->image('http://lorempixel.com/120/120/',array('alt'=>'Author image'));
+          ?>          <ul class="cd-author-info">
+            <li>MyName</li>
+            <li>CEO, CompanyName</li>
+          </ul>
+        </div> <!-- cd-author -->
+      </li>
+
+      <li class="cd-testimonials-item">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, dignissimos iure rem fugiat consequuntur officiis.</p>
+        
+        <div class="cd-author">
+          <?php
+            echo $this->Html->image('http://lorempixel.com/120/120/',array('alt'=>'Author image'));
+          ?>          <ul class="cd-author-info">
+            <li>MyName</li>
+            <li>CEO, CompanyName</li>
+          </ul>
+        </div> <!-- cd-author -->
+      </li>
+
+      <li class="cd-testimonials-item">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At temporibus tempora necessitatibus reiciendis provident deserunt maxime sit id. Dicta aut voluptatibus placeat quibusdam vel, dolore.</p>
+        
+        <div class="cd-author">
+          <?php
+            echo $this->Html->image('http://lorempixel.com/120/120/',array('alt'=>'Author image'));
+          ?>          <ul class="cd-author-info">
+            <li>MyName</li>
+            <li>CEO, CompanyName</li>
+          </ul>
+        </div> <!-- cd-author -->
+      </li>
+
+      <li class="cd-testimonials-item">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis iusto sapiente, excepturi velit, beatae possimus est tenetur cumque fugit tempore dolore fugiat! Recusandae, vel suscipit? Perspiciatis non similique sint suscipit officia illo, accusamus dolorum, voluptate vitae quia ea amet optio magni voluptatem nemo, natus nihil.</p>
+        
+        <div class="cd-author">
+          <?php
+            echo $this->Html->image('http://lorempixel.com/120/120/',array('alt'=>'Author image'));
+          ?>          <ul class="cd-author-info">
+            <li>MyName</li>
+            <li>CEO, CompanyName</li>
+          </ul>
+        </div> <!-- cd-author -->
+      </li>
+
+      <li class="cd-testimonials-item">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor quasi officiis pariatur, fugit minus omnis animi ut assumenda quod commodi, ad a alias maxime unde suscipit magnam, voluptas laboriosam ipsam quibusdam quidem, dolorem deleniti id.</p>
+        
+        <div class="cd-author">
+          <?php
+            echo $this->Html->image('http://lorempixel.com/120/120/',array('alt'=>'Author image'));
+          ?>          <ul class="cd-author-info">
+            <li>MyName</li>
+            <li>CEO, CompanyName</li>
+          </ul>
+        </div> <!-- cd-author -->
+      </li>
+
+      <li class="cd-testimonials-item">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At temporibus tempora necessitatibus reiciendis provident deserunt maxime sit id. Dicta aut voluptatibus placeat quibusdam vel, dolore.</p>
+        
+        <div class="cd-author">
+          <?php
+            echo $this->Html->image('http://lorempixel.com/120/120/',array('alt'=>'Author image'));
+          ?>          <ul class="cd-author-info">
+            <li>MyName</li>
+            <li>CEO, CompanyName</li>
+          </ul>
+        </div> <!-- cd-author -->
+      </li>
+
+      <li class="cd-testimonials-item">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque tempore ipsam, eos suscipit nostrum molestias reprehenderit, rerum amet cum similique a, ipsum soluta delectus explicabo nihil repellat incidunt! Minima magni possimus mollitia deserunt facere, tempore earum modi, ea ipsa dicta temporibus suscipit quidem ut quibusdam vero voluptatibus nostrum excepturi explicabo nulla harum, molestiae alias. Ab, quidem rem fugit delectus quod.</p>
+        
+        <div class="cd-author">
+          <?php
+            echo $this->Html->image('http://lorempixel.com/120/120/',array('alt'=>'Author image'));
+          ?>
+          <ul class="cd-author-info">
+            <li>MyName</li>
+            <li>CEO, CompanyName</li>
+          </ul>
+        </div> <!-- cd-author -->
+      </li>
+    </ul>
+  </div>  <!-- cd-testimonials-all-wrapper -->
+
+  <a href="#0" class="close-btn">Close</a>
+</div> <!-- cd-testimonials-all -->
+
+
+  </div>
+</div>
+
+
+<div class="stats-block">
+  <div class="stats-head">
+    <div class="strike">
+    <span>  
+    <h2 class='home-stats-h2' align="center">
+ Daily Statistics
+  </h2>
+  </span>
+</div>
+  </div>
+  <div class="stats-body row">
+    
+    <div class="col-md-5 col-md-offset-4">
+      <canvas id="myChart" width="700" height="400"></canvas>
+    </div>
+
+
+
+  </div>
+</div>
+
 
 
 
@@ -329,9 +595,26 @@ $('.donate_form').hide();
           slideSpeed : 1000,
           paginationSpeed : 1000,
           singleItem:true,
-          autoPlay:true
+          autoPlay:true,
+          navigationText:['<i class="fa fa-chevron-left" ></i>','<i class="fa fa-chevron-right"></i>']
 
         });
+
+        $("#testimonials-slider").owlCarousel({
+
+          navigation : true, // Show next and prev buttons
+          slideSpeed : 1000,
+          paginationSpeed : 1000,
+          singleItem:true,
+          autoPlay:true,
+          navigationText:['<i class="fa fa-chevron-left"></i>','<i class="fa fa-chevron-right"></i>']
+
+        });
+
+
+$('.cd-testimonials-all-wrapper').children('ul').masonry({
+  itemSelector: '.cd-testimonials-item'
+});
 
 
     $('body').on('click','.home_form_select',function(event){
@@ -374,6 +657,33 @@ $('.donate_form').hide();
 
 
 
+
+  //open the testimonials modal page
+  $('.cd-see-all').on('click', function(){
+    $('.cd-testimonials-all').addClass('is-visible');
+  });
+
+  //close the testimonials modal page
+  $('.cd-testimonials-all .close-btn').on('click', function(){
+    $('.cd-testimonials-all').removeClass('is-visible');
+  });
+  $(document).keyup(function(event){
+    //check if user has pressed 'Esc'
+      if(event.which=='27'){
+        $('.cd-testimonials-all').removeClass('is-visible');  
+      }
+    });
+    
+  //build the grid for the testimonials modal page
+  $('.cd-testimonials-all-wrapper').children('ul').masonry({
+      itemSelector: '.cd-testimonials-item'
+  });
+
+
+  
+
+
+
       $('.card__share > a').on('click', function(e){ 
     e.preventDefault() // prevent default action - hash doesn't appear in url
     //   $(this).parent().find( 'div' ).toggleClass( 'card__social--active' );
@@ -382,8 +692,51 @@ $('.donate_form').hide();
 
 
 
+
+
+
+
+
+
+
+var barData = {
+    labels: ['O +', 'O -', 'A +', 'A -', 'B +', 'B -', 'AB +', 'AB -'],
+    datasets: [
+        {
+            label: 'Requests',
+            fillColor: '#e74c3c',
+            data: [2500, 1902, 1041, 610, 1245, 952, 458, 610]
+        },
+        {
+            label: 'Donors',
+            fillColor: '#5dade2',
+            data: [3104, 1689, 1318, 589, 1199, 1436, 862, 610]
+        }
+    ]
+};
+
+var context = document.getElementById('myChart').getContext('2d');
+var clientsChart = new Chart(context).Bar(barData);
+
+
+
   });
 
+
+
+function isScrolledIntoView(elem)
+{
+    var $elem = $(elem);
+    var $window = $(window);
+
+    var docViewTop = $window.scrollTop();
+    var docViewBottom = docViewTop + $window.height();
+
+    var elemTop = $elem.offset().top;
+    var elemBottom = elemTop + $elem.height();
+
+    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+}
 
 </script>
 
