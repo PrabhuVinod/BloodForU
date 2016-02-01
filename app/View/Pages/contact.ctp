@@ -1,3 +1,8 @@
+<div class="Left-content">
+    <h1>Contact Us</h1>
+    <p>If you have any questions or comments, let us know and we'll get back to you as soon as possible.</p>
+    <email><strong>Email at:</strong> info@bloodforu.co.in</email>
+</div>
 <div class="verticalLine" id="verticalLine"></div>
 <div id="form-main">
   <div id="form-div">
@@ -10,9 +15,9 @@
       <p class="email">
         <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
       </p>
-      
+
       <p class="text">
-        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comment"></textarea>
+        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Message"></textarea>
       </p>
       
       
@@ -46,6 +51,21 @@
         }
         #feedback-page{
             text-align:center;
+        }
+        .Left-content {
+                    background-color: rgba(5, 110, 108, 0.4);
+                    font-family: Helvetica, Arial, sans-serif;
+                    color: dimgrey;
+                    padding-left: 30px;
+                    padding-right: 0px;
+                    padding-top: 0px;
+                    padding-bottom: 25px;
+                    width: 722px;
+                    float: right;
+                    right: 50%;
+                    position: absolute;
+                    margin-top: 111px;
+                    margin-right: 110px;
         }
 
         #form-main{
