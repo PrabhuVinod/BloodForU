@@ -1,3 +1,10 @@
+.btn-primary:active:focus, .btn-primary:active:hover, .btn-primary:focus{
+color: #000000;
+background-color: #B71515;
+border-color: #fbf4f4;
+}
+
+
 .slider-image { 
    position: relative; 
    width: 100%; /* for IE 6 */
@@ -942,9 +949,13 @@ color: #5D5151;
 
 
 .home-quote-wrapper{
-	padding-top: 50px;
-	margin:0 auto; 
-	width:500px; 
+	padding-top: 25px;
+  margin: 0 auto;
+  width: 340px;
+}
+.quotes {
+  font-size: 34px;
+  color: #5D5151; 
 }
 
 

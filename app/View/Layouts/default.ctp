@@ -66,10 +66,10 @@ $siteDescription = __d('bloodforu_dev', 'BloodForU: A timely blood donation can 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="navbar-collapse-8">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Request</a></li>
-            <li><a href="#">Donate</a></li>
-            <li><a href="#" data-placement="bottom" data-toggle="popover" data-title="Login" data-container="body" type="button" data-html="true" id="login">Login</a></li>
+            <li class="active home-nav"><a href="#">Home</a></li>
+            <li class="request-nav"><a href="#">Request</a></li>
+            <li class="donate-nav"><a href="#">Donate</a></li>
+            <li><a href="javascript:void(0);" data-placement="bottom" data-toggle="popover" data-title="Login" data-container="body" type="button" data-html="true" id="login">Login</a></li>
 
 <div id="popover-login" class="hide">
      
@@ -95,7 +95,7 @@ $siteDescription = __d('bloodforu_dev', 'BloodForU: A timely blood donation can 
 
 
 
-            <li><a href="#" data-placement="bottom" data-toggle="popover" data-title="Sign Up" data-container="body" type="button" data-html="true" id="signup">Sign Up</a></li>
+            <li><a href="javascript:void(0);" data-placement="bottom" data-toggle="popover" data-title="Sign Up" data-container="body" type="button" data-html="true" id="signup">Sign Up</a></li>
 
 
 
@@ -132,7 +132,7 @@ $siteDescription = __d('bloodforu_dev', 'BloodForU: A timely blood donation can 
 
 
 
-             <li class="dropdown">
+             <li class="dropdown more-nav">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="margin-right:21px;">More <b class="caret"></b></a>
               <ul class="dropdown-menu" style="margin-right:9px;">
                 <li><a href="#">About Us</a></li>
@@ -147,7 +147,7 @@ $siteDescription = __d('bloodforu_dev', 'BloodForU: A timely blood donation can 
           <form class="navbar-form navbar-left" action="#" role="search">
             <div class="form-group">
               <div class="input-group">
-                <input class="form-control" id="navbarInput-01" placeholder="Search" type="search">
+                <input class="form-control search-nav" id="navbarInput-01" placeholder="Search" type="search">
                 <span class="input-group-btn">
                   <button type="submit" class="btn"><span class="fui-search"></span></button>
                 </span>
@@ -271,8 +271,14 @@ $siteDescription = __d('bloodforu_dev', 'BloodForU: A timely blood donation can 
 });
 
 
-
+$('body').on('click','.search-nav, .home-nav, .request-nav, .donate-nav, .more-nav',function(event){
+	$('#login').popover('hide');
+	$('#signup').popover('hide');
+});
 	
+
+
+
 
 </script>
 

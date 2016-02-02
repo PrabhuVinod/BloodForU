@@ -311,7 +311,7 @@ echo $this->element('requeststable');
 </div>
 
 
-
+<div class="index-lower">
 <div class="testimonial-block">
   <div class="testimonials-head">
     
@@ -566,7 +566,7 @@ echo $this->element('requeststable');
   </div>
   <div class="stats-body row">
     
-    <div class="col-md-5 col-md-offset-4">
+    <div class="col-md-5 col-md-offset-3">
       <canvas id="myChart" width="700" height="400"></canvas>
     </div>
     <div class="col-md-1">
@@ -588,6 +588,7 @@ echo $this->element('requeststable');
   </div>
 </div>
 
+<h3 class="quotes" align="center">“Donate your blood for a reason, let the reason to be life”</h3>
 
 <div class="home-quote-wrapper">
 <div class="mb-wrap mb-style-5">
@@ -600,6 +601,8 @@ echo $this->element('requeststable');
 
 
 
+
+</div>
 </div>
 
 <script type="text/javascript">
