@@ -569,18 +569,38 @@ echo $this->element('requeststable');
     <div class="col-md-5 col-md-offset-4">
       <canvas id="myChart" width="700" height="400"></canvas>
     </div>
-
+    <div class="col-md-1">
+      <ul style="list-style-type: none;">
+        <li>
+          <div class="row">
+            <span class="fui-checkbox-unchecked" style="color:#e74c3c;"></span><span style="padding-left:5px;">Requests</span>
+          </div>
+        </li>
+        <li>
+        <div class="row">
+            <span class="fui-checkbox-unchecked" style="color:#5dade2;"></span><span style="padding-left:5px;">Available</span>
+          </div>          
+        </li>
+      </ul>
+    </div>
 
 
   </div>
 </div>
 
 
+<div class="home-quote-wrapper">
+<div class="mb-wrap mb-style-5">
+          <div class="mb-thumb"></div>
+          <blockquote cite="http://books.google.pt/books/about/Dirk_Gently_s_Holistic_Detective_Agency.html?id=35li46gjDx0C&redir_esc=y">
+            <p>Five minutes of your time <br>+<br>350 ml. of your blood <span> Life saved.</span></p>
+          </blockquote>
+
+        </div>
 
 
 
-
-
+</div>
 
 <script type="text/javascript">
 
@@ -683,19 +703,9 @@ $('.cd-testimonials-all-wrapper').children('ul').masonry({
   
 
 
-
-      $('.card__share > a').on('click', function(e){ 
-    e.preventDefault() // prevent default action - hash doesn't appear in url
-    //   $(this).parent().find( 'div' ).toggleClass( 'card__social--active' );
-    // $(this).toggleClass('share-expanded');
-    });
-
-
-
-
-
-
-
+$('.stats-body').scrolling(); 
+    
+    $('.stats-body').one('scrollin', function(event, $all_elements) {
 
 
 
@@ -720,23 +730,38 @@ var clientsChart = new Chart(context).Bar(barData);
 
 
 
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+      $('.card__share > a').on('click', function(e){ 
+    e.preventDefault() // prevent default action - hash doesn't appear in url
+    //   $(this).parent().find( 'div' ).toggleClass( 'card__social--active' );
+    // $(this).toggleClass('share-expanded');
+    });
+
+
   });
 
 
 
-function isScrolledIntoView(elem)
-{
-    var $elem = $(elem);
-    var $window = $(window);
 
-    var docViewTop = $window.scrollTop();
-    var docViewBottom = docViewTop + $window.height();
 
-    var elemTop = $elem.offset().top;
-    var elemBottom = elemTop + $elem.height();
 
-    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-}
+
+
+
+
 
 </script>
 

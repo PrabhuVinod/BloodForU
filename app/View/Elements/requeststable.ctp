@@ -83,6 +83,86 @@
         	</div>
         </td>        <td><button class="btn btn-lg btn-danger">Donate</button></td><td><button class="btn btn-lg btn-info">Refer</button></td>
       </tr>
+      <tr>
+        <td>A +</td>
+        <td>Hyderabad</td>
+        <td>Pakodi</td>
+        <td>
+        	<div class="progress" data-amount="80">
+        		<div class="amount"></div>
+        	</div>
+        </td>        <td><button class="btn btn-lg btn-danger">Donate</button></td><td><button class="btn btn-lg btn-info">Refer</button></td>
+      </tr>
+	  <tr>
+        <td>A +</td>
+        <td>Hyderabad</td>
+        <td>Pakodi</td>
+        <td>
+        	<div class="progress" data-amount="10">
+        		<div class="amount"></div>
+        	</div>
+        </td>        <td><button class="btn btn-lg btn-danger">Donate</button></td><td><button class="btn btn-lg btn-info">Refer</button></td>
+      </tr>
+      <tr>
+        <td>A +</td>
+        <td>Hyderabad</td>
+        <td>Pakodi</td>
+        <td>
+        	<div class="progress" data-amount="80">
+        		<div class="amount"></div>
+        	</div>
+        </td>        <td><button class="btn btn-lg btn-danger">Donate</button></td><td><button class="btn btn-lg btn-info">Refer</button></td>
+      </tr>
+	  <tr>
+        <td>A +</td>
+        <td>Hyderabad</td>
+        <td>Pakodi</td>
+        <td>
+        	<div class="progress" data-amount="10">
+        		<div class="amount"></div>
+        	</div>
+        </td>        <td><button class="btn btn-lg btn-danger">Donate</button></td><td><button class="btn btn-lg btn-info">Refer</button></td>
+      </tr>
+      <tr>
+        <td>A +</td>
+        <td>Hyderabad</td>
+        <td>Pakodi</td>
+        <td>
+        	<div class="progress" data-amount="80">
+        		<div class="amount"></div>
+        	</div>
+        </td>        <td><button class="btn btn-lg btn-danger">Donate</button></td><td><button class="btn btn-lg btn-info">Refer</button></td>
+      </tr>
+	  <tr>
+        <td>A +</td>
+        <td>Hyderabad</td>
+        <td>Pakodi</td>
+        <td>
+        	<div class="progress" data-amount="10">
+        		<div class="amount"></div>
+        	</div>
+        </td>        <td><button class="btn btn-lg btn-danger">Donate</button></td><td><button class="btn btn-lg btn-info">Refer</button></td>
+      </tr>
+      <tr>
+        <td>A +</td>
+        <td>Hyderabad</td>
+        <td>Pakodi</td>
+        <td>
+        	<div class="progress" data-amount="80">
+        		<div class="amount"></div>
+        	</div>
+        </td>        <td><button class="btn btn-lg btn-danger">Donate</button></td><td><button class="btn btn-lg btn-info">Refer</button></td>
+      </tr>
+	  <tr>
+        <td>A +</td>
+        <td>Hyderabad</td>
+        <td>Pakodi</td>
+        <td>
+        	<div class="progress" data-amount="10">
+        		<div class="amount"></div>
+        	</div>
+        </td>        <td><button class="btn btn-lg btn-danger">Donate</button></td><td><button class="btn btn-lg btn-info">Refer</button></td>
+      </tr>
     </tbody>
   </table>
 
@@ -111,5 +191,11 @@ $('.requests-table .progress').each(function(index,value){
 
 
 
+
+
+   
+
 });
+
+
   </script>

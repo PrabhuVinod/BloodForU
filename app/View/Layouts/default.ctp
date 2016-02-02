@@ -33,6 +33,7 @@ $siteDescription = __d('bloodforu_dev', 'BloodForU: A timely blood donation can 
 		echo $this->Html->script('jquery');
 		echo $this->Html->script('bootstrap.min');
 		echo $this->Html->script('masonry.pkgd.min');
+		echo $this->Html->script('jquery.scrolling');
 
 
 		
@@ -68,8 +69,69 @@ $siteDescription = __d('bloodforu_dev', 'BloodForU: A timely blood donation can 
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#">Request</a></li>
             <li><a href="#">Donate</a></li>
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Join Us</a></li>
+            <li><a href="#" data-placement="bottom" data-toggle="popover" data-title="Login" data-container="body" type="button" data-html="true" id="login">Login</a></li>
+
+<div id="popover-login" class="hide">
+     
+
+          <div class="login-form login-popover-form">
+            <div class="form-group">
+              <input type="text" class="form-control login-field" value="" placeholder="Username" id="login-name" />
+              <label class="login-field-icon fui-user" for="login-name"></label>
+            </div>
+
+            <div class="form-group">
+              <input type="password" class="form-control login-field" value="" placeholder="Password" id="login-pass" />
+              <label class="login-field-icon fui-lock" for="login-pass"></label>
+            </div>
+
+            <a class="btn btn-primary btn-lg btn-block" href="#">Log in</a>
+            <a class="login-link" href="#">Lost your password?</a>
+          </div>
+
+
+</div>
+
+
+
+
+            <li><a href="#" data-placement="bottom" data-toggle="popover" data-title="Sign Up" data-container="body" type="button" data-html="true" id="signup">Sign Up</a></li>
+
+
+
+
+<div id="popover-signup" class="hide">
+     
+
+          <div class="login-form signup-popover-form">
+            <div class="form-group">
+              <input type="text" class="form-control login-field" value="" placeholder="Username" id="signup-name" />
+              <label class="login-field-icon fui-user" for="signup-name"></label>
+            </div>
+
+            <div class="form-group">
+              <input type="password" class="form-control login-field" value="" placeholder="Password" id="signup-pass" />
+              <label class="login-field-icon fui-lock" for="signup-pass"></label>
+            </div>
+
+            <div class="form-group">
+              <input type="password" class="form-control login-field" value="" placeholder="Confirm Password" id="c-signup-pass" />
+              <label class="login-field-icon fui-lock" for="c-signup-pass"></label>
+            </div>
+
+            <a class="btn btn-primary btn-lg btn-block" href="#">Sign Up</a>
+            
+          </div>
+
+
+</div>
+
+
+
+
+
+
+
              <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="margin-right:21px;">More <b class="caret"></b></a>
               <ul class="dropdown-menu" style="margin-right:9px;">
@@ -179,4 +241,49 @@ $siteDescription = __d('bloodforu_dev', 'BloodForU: A timely blood donation can 
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
 </body>
+
+<script type="text/javascript">
+	
+	$("#login").popover({
+    html: true, 
+    trigger: 'manual',
+	content: function() {
+		$('#signup').popover('hide');
+          return $('#popover-login').html();
+        }
+}).click(function(e) {
+    $(this).popover('toggle');
+    e.stopPropagation();
+});
+
+
+		$("#signup").popover({
+    html: true, 
+    trigger: 'manual',
+	content: function() {
+
+		$('#login').popover('hide');
+          return $('#popover-signup').html();
+        }
+}).click(function(e) {
+    $(this).popover('toggle');
+    e.stopPropagation();
+});
+
+
+
+	
+
+</script>
+
+
+
+<style type="text/css">
+	
+	.popover {max-width:400px;}
+
+</style>
+
 </html>
+
+
