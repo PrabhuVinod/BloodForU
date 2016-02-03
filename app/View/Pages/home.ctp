@@ -706,9 +706,9 @@ $('.cd-testimonials-all-wrapper').children('ul').masonry({
   
 
 
-$('.stats-body').scrolling(); 
+$('#myChart').scrolling(); 
     
-    $('.stats-body').one('scrollin', function(event, $all_elements) {
+    $('#myChart').one('scrollin', function(event, $all_elements) {
 
 
 
